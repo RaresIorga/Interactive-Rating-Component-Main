@@ -1,0 +1,114 @@
+/*the usual*/
+* {
+    margin: 0;
+    padding: 0;
+    color:hsl(217, 12%, 63%);
+}
+
+body{
+   background-color: hsl(216, 12%, 8%); 
+}
+a{
+    text-decoration: none;
+}
+/*Disappear*/
+.out{
+    display:none;
+}
+/*The block in the center and its contents*/
+main{
+    font-family: Overpass;
+    display:flex;
+    flex-direction: column;
+    max-width: 10rem;
+    min-width: 20rem;
+    width:30%;
+    margin:10% auto;
+    background-image:linear-gradient(to bottom right, hsl(213, 19%, 18%),hsl(213, 18%, 10%));
+    padding: 2rem;
+    border-radius: 5%;
+}
+/*star in the corner*/
+.star{
+    width: fit-content;
+    background-color: hsl(215, 16%, 24%);
+    border-radius:50%;
+}
+.star img{
+    text-align: center;
+    padding:0.6rem 0.5rem 0.2rem 0.5rem;
+}
+
+h1{
+    color:hsl(0, 0%, 100%);
+    padding:1rem 0;
+    font-size: 1.4rem;
+}
+p{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* style and alignemnt of rating buttons and submit*/
+.rating{
+    display:flex;
+    align-items: stretch;
+}
+.rating button{
+    padding:1rem;
+    margin: 0 2.5%;
+    width:15%;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border:none;
+    background-color: hsl(215, 19%, 18%);
+    
+}
+#submit{
+    padding: 0.5rem;
+    border-radius: 24px;
+    border:none;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+
+}
+
+/*Second part, after the user presses submit*/
+.secondPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display:none;
+}
+#selected{
+    margin:1rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 24px;
+    color:hsl(25, 97%, 53%);
+}
+.secondPart h2{
+    color:  hsl(0, 0%, 100%);
+    margin:0.8rem;
+}
+.secondPart p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+/*Hover Style*/
+.rating button:hover{
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+#submit:hover{
+    color:hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
